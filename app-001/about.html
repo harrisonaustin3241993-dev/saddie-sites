@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who makes Leftwise</title>
+<meta name="description" content="Leftwise is built by Austin Harrison: a meal planner that picks dinners from your own recipes so the groceries overlap.">
+<link rel="stylesheet" href="style.css">
+<style>
+.founder{display:flex;gap:20px;align-items:center;margin:8px 0 28px}
+.founder img{width:112px;height:112px;border-radius:50%;object-fit:cover;flex:none;background:var(--line)}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0 8px}
+.shots img{width:100%;border-radius:14px;border:1px solid var(--line)}
+.store{display:inline-block;margin-top:8px;padding:12px 20px;border-radius:12px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Support</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1>Who makes Leftwise</h1>
+<p class="sub">One person, one weekly grocery run, and a lot less food in the trash.</p>
+
+<div class="founder">
+  <!-- TODO(Austin): add your photo as app-001/austin.jpg (square, at least 300x300). -->
+  <img src="austin.jpg" alt="Austin Harrison">
+  <div>
+    <strong>Austin Harrison</strong><br>
+    <!-- TODO(Austin): two or three sentences about you, in your own words. -->
+    [Your short bio goes here.]
+  </div>
+</div>
+
+<h2>Why I built it</h2>
+<!-- TODO(Austin): confirm this matches the founder line in the App Store description. -->
+<p>I built Leftwise to stop buying groceries for one recipe and throwing the rest away. It plans the week's dinners from recipes you already saved, picking ones that share ingredients, so one shop covers several dinners and you get one grocery list.</p>
+
+<h2>What it looks like</h2>
+<!-- TODO: copy 01-week.png, 02-import.png and 03-list.png from the CI "listing-screenshots" artifact into app-001/. -->
+<div class="shots">
+  <img src="01-week.png" alt="This Week screen with dinners that share ingredients">
+  <img src="02-import.png" alt="A recipe imported from a link, ready to save">
+  <img src="03-list.png" alt="One grocery list with duplicates merged">
+</div>
+<p><a class="store" href="https://apps.apple.com/us/app/id6823657942">Get Leftwise on the App Store</a></p>
+
+<h2>Talk to me</h2>
+<p>Email <a href="mailto:harrisonapplab@gmail.com">harrisonapplab@gmail.com</a>. I read every message myself.</p>
+
+<footer>Leftwise is made by Harrison App Lab LLC. &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple standard EULA)</a></footer>
+</main>
+</body>
+</html>
