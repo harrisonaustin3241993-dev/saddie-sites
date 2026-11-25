@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leftwise Support</title>
+<title>Leftwise: Meal Planner for iPhone</title>
+<meta name="description" content="Save your recipes, plan the week's dinners and get one grocery list. Leftwise: Meal Planner for iPhone.">
 <link rel="stylesheet" href="style.css">
 <script type="module">
 import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.5';
@@ -13,15 +14,32 @@ analytics.init({
   site: 'landing',
   requestBatching: false,
 });
+for (const a of document.querySelectorAll('a[href*="apps.apple.com"]')) {
+  a.addEventListener('click', () => {
+    try { analytics.trackEvent('app_store_click', { page: 'home' }); } catch (e) {}
+  });
+}
 </script>
 </head>
 <body>
 <main>
-<nav><a href="./">Support</a><a href="privacy.html">Privacy Policy</a></nav>
-<h1>Leftwise Support</h1>
-<p class="sub">Plan the week's dinners from recipes you already saved, and get one grocery list.</p>
+<nav><a href="#support">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1>Leftwise: Meal Planner</h1>
+<p class="sub">Save your recipes in one place, plan the week's dinners, and get one grocery list for everything you cook.</p>
 
-<h2>Contact us</h2>
+<a class="cta" href="https://apps.apple.com/us/app/id6823657942">Get Leftwise on the App Store</a>
+<p class="small">iPhone only. Not available in the EU. Saving recipes is free. Standard $0.99/mo and Plus $3.99/mo, each with a free trial.</p>
+
+<h2>What it does</h2>
+<ul>
+<li>Save recipes by pasting or typing them in. Standard also imports them from links, screenshots and the Share sheet.</li>
+<li>Plan my week, part of Plus, picks dinners from your own recipes that share ingredients.</li>
+<li>One grocery list that updates when the plan changes.</li>
+<li>New in 1.1: leftover nights and side dishes.</li>
+<li>No ads and no account needed. Your recipes stay on your iPhone.</li>
+</ul>
+
+<h2 id="support">Support</h2>
 <p>Email <a href="mailto:harrisonapplab@gmail.com">harrisonapplab@gmail.com</a>. We read every message and usually reply within two business days.</p>
 
 <h2>Common questions</h2>

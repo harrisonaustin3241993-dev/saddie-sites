@@ -21,6 +21,11 @@ analytics.init({
   site: 'landing',
   requestBatching: false,
 });
+for (const a of document.querySelectorAll('a[href*="apps.apple.com"]')) {
+  a.addEventListener('click', () => {
+    try { analytics.trackEvent('app_store_click', { page: 'thanksgiving' }); } catch (e) {}
+  });
+}
 </script>
 </head>
 <body>
@@ -39,7 +44,7 @@ analytics.init({
 <li>Get one grocery list with duplicates merged, so you only buy what you don't already have.</li>
 </ol>
 
-<footer>Leftwise is made by Harrison App Lab LLC. &middot; <a href="./">Support</a> &middot; <a href="privacy.html">Privacy Policy</a></footer>
+<footer>Leftwise is made by Harrison App Lab LLC. &middot; <a href="./#support">Support</a> &middot; <a href="privacy.html">Privacy Policy</a></footer>
 </main>
 </body>
 </html>
